@@ -1,7 +1,7 @@
 #tables
 ## user table
 
-CREATE TABLE user(
+CREATE TABLE users(
 	 id INT(11) AUTO_INCREMENT PRIMARY KEY,
 	 name VARCHAR(100),
 	 email VARCHAR(100), 
