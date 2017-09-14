@@ -5,7 +5,7 @@
 
  <div class="jumbotron text-center">
  	<div class="container">
-	<h1>FlasTweet</h1>
+	<h1>Dashboard</h1>
 	<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -13,10 +13,19 @@
 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	{% if not session.logged_in %}
-      <a href="/register" class="btn btn-primary btn-lg">Register</a>
+      <a href="/signup" class="btn btn-primary btn-lg">Signup</a>
       <a href="/login" class="btn btn-success btn-lg">Login</a>
     {% endif %}
     </div>
+</div>
+
+<div class="card" style="width: 20rem;">
+  <img class="card-img-top" src="{{ url_for('static', filename='img_fjords.jpg') }}" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Card title</h4>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
 </div>
 
 {% endblock %}
